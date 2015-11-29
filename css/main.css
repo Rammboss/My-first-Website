@@ -19,7 +19,7 @@
 
 .jumbotron {
   background-image:url('../calella%20II.jpg');
-  height: 900px;
+  height: 500px;
   width: auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -152,5 +152,4 @@
     text-align: center;
     width: 100%;
     height: auto;
-    margin-top: 200px;
 }
