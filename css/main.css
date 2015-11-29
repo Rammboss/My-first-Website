@@ -24,11 +24,20 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+#header{
+    background-color: azure;
+    
+}
 .picture {
     float: left;
     margin-bottom: 10px;
     border-radius: 50%;
 }
+#GitHub {
+    padding-left: 20px;
+    
+}
+    
 .picture img{
     float: left;
     margin-right: 10px;
@@ -113,4 +122,35 @@
 .icon{
     width: 50px;
     height: 50px;
+}
+
+.boxgroesse {
+  width: 250px;
+  height: 175px;
+  font-size: 30pt;
+  color: white;
+  opacity: 0.5;
+}
+ 
+#box1 {
+    background-color: red;
+    position: absolute;
+    top: 90px;
+    left: 100px;
+}
+ 
+#box2 {
+    background-color: green;
+    position: absolute;
+    top: 70px;
+    left: 300px;
+}
+ 
+#box3 {
+    background-color: beige;
+    border-radius: 19%;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: 200px;
 }
