@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/jQuery/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/functionCharts/fusioncharts.js"></script>
+    <script type="text/javascript" src="js/functionCharts/themes/fusioncharts.theme.fint.js"></script>
+      <script type="text/javascript" src="js/functionCharts/myChart.js"></script>
+      
+    <script type="text/javascript">
+  FusionCharts.ready(function(){
+    var revenueChart = new FusionCharts({
+        "type": "column3d",
+        "renderAt": "chartContainer",
+        "width": "500",
+        "height": "300",
+        "dataFormat": "json",
+        "dataSource":  {
+          "chart": {
+            "caption": "Monthly revenue for last year",
+            "subCaption": "Harry's SuperMart",
+            "xAxisName": "Month",
+            "yAxisName": "Revenues (In USD)",
+            "theme": "fint"
+         }, getData();
+         "data": [
+            {
+               "label": "Jan",
+               "value": "420000"
+            },
+            {
+               "label": "Feb",
+               "value": "810000"
+            },
+            {
+               "label": "Mar",
+               "value": "720000"
+            },
+            {
+               "label": "Apr",
+               "value": "550000"
+            },
+            {
+               "label": "May",
+               "value": "910000"
+            },
+            {
+               "label": "Jun",
+               "value": "510000"
+            },
+            {
+               "label": "Jul",
+               "value": "680000"
+            },
+            {
+               "label": "Aug",
+               "value": "620000"
+            },
+            {
+               "label": "Sep",
+               "value": "610000"
+            },
+            {
+               "label": "Oct",
+               "value": "490000"
+            },
+            {
+               "label": "Nov",
+               "value": "900000"
+            },
+            {
+               "label": "Dec",
+               "value": "730000"
+            }
+          ]
+      }
+
+  });
+revenueChart.render();
+})
+</script>
+    <title>My Study</title>
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <li><a href="http://thm.de/ges/studium/bachelor/medinfbsc/contentmedinfbsc" target="_blank">Subject</a></li>
+          <li><a href="inprogress.html#middle">Browse</a></li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="chart.html">Chart</a></li>
+          <li><a href="wiki.html">Wiki</a></li>
+          <li><a href="Impressum.html#middle">Impressum</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+          <div class="boxgroesse" id="box3">
+            <h1>Medizinische Informatik</h1>
+            <p>by Thomas Lippert</p>
+          </div>
+        
+      </div>
+    </div> 
+    <div class="neighborhood-guides">
+        <div class="container">
+        <h2>Arsnova Chart</h2>         
+            <div class="thumbnail">
+                
+                <div id="chartContainer">FusionCharts XT will load here!</div>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="learn-more">
+	  <div class="container">
+		<div class="row">
+	      <div class="col-md-4">
+			<h3>Codecademy</h3>
+                    <div class="col-md-4"> 
+			<p><a href="https://www.codecademy.com/Rammboss" target="_blank">Here</a> are my brackets</p>
+                  </div>
+                 <div class="col-md-1">  
+              <a href="https://www.codecademy.com/Rammboss" target="_blank"><img src="CodeCad.png" class="icon" alt="Codecademy icon" title="Codecademy icon"/></a>
+                  </div>
+	      </div>
+		  <div class="col-md-4">
+			<h3>My University of Applied Sciences</h3>
+                <p>Click <a href="https://www.thm.de/site/" target="_blank">here</a> to visit the homepage.</p>
+		  </div>
+		  <div class="col-md-4">
+			<h3>Facebook</h3>
+			<p>Watch my profil <a href="https://www.facebook.com/thomas.lippert.37" target="_blank">here</a>.</p>
+			
+		  </div>
+	    </div>
+	  </div>
+	</div>
+  </body>
+</html>
