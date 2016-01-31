@@ -1,27 +1,28 @@
 $(document).ready(function(){
-	getArsnovaStats();
+	getStats();
 });
 
+
 setInterval(function(){ 
-	getArsnovaStats();
+	getStats();
 }, 30000);
 
-function getArsnovaStats(){
-	var xmlHttp = null;
+function getStats(){
+	var xhr = null;
 	try {
-		xmlHttp = new XMLHttpRequest();
+		xhr = new XMLHttpRequest();
 	} catch(e) {
 		alert("Statistik Server nicht erreichbar");
 	}
-	if (xmlHttp) {
-		xmlHttp.open('GET', 'https://arsnova.eu/api/statistics/', true);
-		xmlHttp.onreadystatechange = function () {
-			if (xmlHttp.readyState == 4) {
-				var result = JSON.parse(xmlHttp.responseText); 
+	if (xhr) {
+		xhr.open('GET', 'https://arsnova.eu/api/statistics/', true);
+		xhr.onreadystatechange = function () {
+			if (xhr.readyState == 4) {
+				var result = JSON.parse(xhr.responseText); 
                 window.onload(result);
 			}
 		};
-		xmlHttp.send(null);
+		xhr.send(null);
 	}
 }
     
